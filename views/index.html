@@ -1,9 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>DELI-VERY</title>
-    </head>
-    <body>
-        <h1>Hello World!!!</h1>
-    </body>
+<head>
+    <!-- Your comment goes here -->
+    <title>Bastard Burgers</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <main>
+        <h1>Welcome to Bastard Burgers</h1>
+
+        <section id="menu">
+            <h3>Select burger</h3>
+            <p>This is where you execute burger selection</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>The Egg Burger</th>
+                        <th>The Bean Burger</th>
+                        <th>The Honest Burger</th>
+                        <th>The London Burger</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <ul>
+                            <td><img src="img/EggBurger.jpg" alt="an egg burger" width="250" height="250" title="Egg Burger"/></td>
+                            <td><img src="img/BeanBurger.jpg" alt="a Bean burger" width="400" height="250" title="Bean Burger"/></td>
+                            <td><img src="img/HonestBurger.jpg" alt="a honest burger" width="350" height="250" title="Honset Burger"/></td>
+                            <td><img src="img/LondonBurger.jpg" alt="a London burger" width="250" height="250" title="London Burger"/></td>
+                        </ul>
+                    </tr>
+                    <tr>
+                        <td><li>1000 kcal</li></td>
+                        <td><li>1200 kcal</li></td>
+                        <td><li>1100 kcal</li></td>
+                        <td><li>1300 kcal</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Contains Egg</li></td>
+                        <td><li>Contains Beans/Sweet potatoes/Cheese</li></td>
+                        <td><li>Contains Bacon</li></td>
+                        <td><li>Contains Bacon</li></td>
+                    </tr>
+                    <tr>
+                        <ul>
+                            <td><li>Contains Gluten/Eggs/Oninon</li></td>
+                            <td><li>Contains Gluten/Onion/Mayonnaise</li></td>
+                            <td><li>Contains Glutten/Eggs/Onion/Wheat</li></td>
+                            <td><li>Contains Gluten/Wheat/Mustard</li></td>
+                        </ul>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="customer_infromation">
+            <h3>Customer information</h3>
+            <p>This is where you provide necessery information</p>
+        </section>
+
+        <section id="contact">
+            <h3>Delivery information</h3>
+            <form>
+                <p>
+                    <!-- fn = full name -->
+                    <label for="name">Full name</label><br>
+                    <input type="text" id="name" name="fn" required="required" placeholder="First- and Last name" maxlength="32">
+                </p>
+                <p>
+                    <!-- em = email -->
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address" maxlength="32">
+                </p>
+                <p>
+                    <!-- st = street number -->
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="st" required="required" placeholder="Street name" maxlength="32">
+                </p>
+                <p>
+                    <!-- hn = house number -->
+                    <label for="house">House</label><br>
+                    <input type="number" id="house" name="hn" required="required" placeholder="House number">
+                </p>
+                <p>
+                    <label for="payment_options">Payment options</label><br>
+                    <select id="payment_options" name="po">
+                        <option>Mobile payment</option>
+                        <option selected="selected">Credit card</option>
+                        <option>Cash</option>
+                        <option>Check</option>
+                    </select>
+                </p>
+                <p>
+                    <!--gn = gender-->
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="gender" name="gn" value="male">Male <br>
+                    <input type="radio" id="gender" name="gn" value="female">Female <br>
+                    <input type="radio" id="gender" name="gn" value="other" checked="checked">Other <br>
+                </p>
+                <button type="submit"><img src="img/order.png" alt="your order" width="15" title="your order"/> Place my order!</button>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>Copyright &copy; Aliyawer Qambari 2019 </p>
+    </footer>
+
+</body>
 </html>
