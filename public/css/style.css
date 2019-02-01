@@ -1,0 +1,94 @@
+/* comment*/
+@import 'https://fonts.googleapis.com/css?family=Satisfy';
+@import 'https://fonts.googleapis.com/css?family=Merienda';
+
+body {
+    /*help*/
+    width: 100vw;
+    height: 100vh;
+    font-family: "Merienda";
+    font-size: 12pt;
+    background-repeat: repeat-y;
+    background-color: #fbbfbe
+}
+
+header{
+    height: 50%;
+    overflow: hidden;
+    margin-top: -13%;
+    margin-left: -10px;
+}
+
+.head img{
+    width: 100%;
+    height: auto;
+    opacity: .8;
+    margin-bottom: -2%;
+}
+
+.welcome_massage{
+    position: absolute;
+    top:10%;
+    left: 5%;
+    font-family: "Satisfy";
+    font-size: 2vw;
+    color: black
+}
+
+.menu{
+    width: 100vw;
+    padding: 5px;
+    margin-left: -10px;
+    border-top: 2px Dashed white;
+    border-bottom: 2px Dashed white;
+    color:white;
+    background-color:#220022
+}
+
+.foot {
+    margin-bottom: 20px;
+    font-size: 10pt;
+    color: #ff5500
+}
+
+#contact{
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    border: 2px Dashed black;
+    width: 97vw
+}
+
+#customer_infromation{
+    border: 2px Dashed black;
+    width: 97vw
+}
+
+.allergy{
+    font-weight: bold;
+}
+
+button{
+    cursor:pointer;
+    background-color: #55aa55
+}
+
+button:hover {
+    background-color: #bbffbb
+}
+
+input[type="radio"] {
+    height: .8em;
+    width: .8em;
+}
+
+table{
+    padding-top: 10px;
+    padding-left: 5px;
+    height: 50vh;
+    width: 95vw;
+}
+
+section{
+    margin-bottom: 30px;
+    padding-left: 10px;
+}

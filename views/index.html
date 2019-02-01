@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
     <!-- Your comment goes here -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Bastard Burgers</title>
     <meta charset="utf-8"/>
 </head>
+
+
 <body>
     <main>
-        <h1>Welcome to Bastard Burgers</h1>
 
-        <section id="menu">
-            <h3>Select burger</h3>
+        <header class="head">
+            <img  src="img/background.jpg" alt="background pic">
+            <div class="welcome_massage">
+                <h1>Welcome to Bastard Burgers</h1>
+            </div>
+        </header>
+
+        <section class="menu">
+            <h2>Select burger</h2>
             <p>This is where you execute burger selection</p>
 
             <table>
@@ -25,10 +35,10 @@
                 <tbody>
                     <tr>
                         <ul>
-                            <td><img src="img/EggBurger.jpg" alt="an egg burger" width="250" height="250" title="Egg Burger"/></td>
-                            <td><img src="img/BeanBurger.jpg" alt="a Bean burger" width="400" height="250" title="Bean Burger"/></td>
-                            <td><img src="img/HonestBurger.jpg" alt="a honest burger" width="350" height="250" title="Honset Burger"/></td>
-                            <td><img src="img/LondonBurger.jpg" alt="a London burger" width="250" height="250" title="London Burger"/></td>
+                            <td><img src="img/EggBurger.jpg" alt="an egg burger" width="100%" title="Egg Burger"</td>
+                            <td><img src="img/BeanBurger.jpg" alt="a Bean burger" width="100%" title="Bean Burger"</td>
+                            <td><img src="img/HonestBurger.jpg" alt="a honest burger" width="100%" title="Honset Burger"</td>
+                            <td><img src="img/LondonBurger.png" alt="a London burger" width="100%" title="London Burger"</td>
                         </ul>
                     </tr>
                     <tr>
@@ -45,10 +55,10 @@
                     </tr>
                     <tr>
                         <ul>
-                            <td><li>Contains Gluten/Eggs/Oninon</li></td>
-                            <td><li>Contains Gluten/Onion/Mayonnaise</li></td>
-                            <td><li>Contains Glutten/Eggs/Onion/Wheat</li></td>
-                            <td><li>Contains Gluten/Wheat/Mustard</li></td>
+                            <td><li>Contains <span class="allergy">Gluten/Eggs/Oninon</span></li></td>
+                            <td><li>Contains <span class="allergy">Gluten/Onion/Mayonnaise</span></li></td>
+                            <td><li>Contains <span class="allergy">Gluten/Eggs/Onion/Wheat</span></li></td>
+                            <td><li>Contains <span class="allergy">Gluten/Wheat/Mustard</span></li></td>
                         </ul>
                     </tr>
                 </tbody>
@@ -103,10 +113,11 @@
 
             </form>
         </section>
+        
     </main>
 
     <hr>
-    <footer>
+    <footer class="foot">
         <p>Copyright &copy; Aliyawer Qambari 2019 </p>
     </footer>
 
