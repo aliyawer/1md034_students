@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,6 @@
     <title>Bastard Burgers</title>
     <meta charset="utf-8"/>
 </head>
-
 
 <body>
     <main>
@@ -23,46 +23,56 @@
             <h2>Select burger</h2>
             <p>This is where you execute burger selection</p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>The Egg Burger</th>
-                        <th>The Bean Burger</th>
-                        <th>The Honest Burger</th>
-                        <th>The London Burger</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <ul>
-                            <td><img src="img/EggBurger.jpg" alt="an egg burger" width="100%" title="Egg Burger"</td>
-                            <td><img src="img/BeanBurger.jpg" alt="a Bean burger" width="100%" title="Bean Burger"</td>
-                            <td><img src="img/HonestBurger.jpg" alt="a honest burger" width="100%" title="Honset Burger"</td>
-                            <td><img src="img/LondonBurger.png" alt="a London burger" width="100%" title="London Burger"</td>
-                        </ul>
-                    </tr>
-                    <tr>
-                        <td><li>1000 kcal</li></td>
-                        <td><li>1200 kcal</li></td>
-                        <td><li>1100 kcal</li></td>
-                        <td><li>1300 kcal</li></td>
-                    </tr>
-                    <tr>
-                        <td><li>Contains Egg</li></td>
-                        <td><li>Contains Beans/Sweet potatoes/Cheese</li></td>
-                        <td><li>Contains Bacon</li></td>
-                        <td><li>Contains Bacon</li></td>
-                    </tr>
-                    <tr>
-                        <ul>
-                            <td><li>Contains <span class="allergy">Gluten/Eggs/Oninon</span></li></td>
-                            <td><li>Contains <span class="allergy">Gluten/Onion/Mayonnaise</span></li></td>
-                            <td><li>Contains <span class="allergy">Gluten/Eggs/Onion/Wheat</span></li></td>
-                            <td><li>Contains <span class="allergy">Gluten/Wheat/Mustard</span></li></td>
-                        </ul>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="wrapper">
+                <div class="pic a">
+                    <h5>Bang Burger</h5>
+                    <img src="img/BangBurger.jpg" alt="Bang burger" width="100%" title="The Bang Bang Burger"/>
+                    <ul>
+                        <tr>
+                            <li>800 kcal</li>
+                            <li>Contains <span class="allergy">gluten</span></li>
+                            <li>Contains <span class="allergy">lactose</span></li>
+
+                        </tr>
+                    </ul>
+                </div>
+                <div class="pic b">
+                    <h5>Cheese Burger</h5>
+                    <img src="img/CheeseBurger.jpg" alt="Classic Cheeseburger" width="100%" title="Classic Cheeseburger"/>
+                    <ul>
+                        <tr>
+                            <li>900 kcal</li>
+                            <li>Contains <span class="allergy">gluten</span></li>
+                            <li>Contains <span class="allergy">lactose</span></li>
+
+                        </tr>
+                    </ul>
+                </div>
+                <div class="pic c">
+                    <h5>Onion Burger</h5>
+                    <img src="img/OnionBurger.jpg" alt="Onion burger" width="100%" title="The Onion burger with cheese"/>
+                    <ul>
+                        <tr>
+                            <li>1000 kcal</li>
+                            <li>Contains <span class="allergy">gluten</span></li>
+                            <li>Contains <span class="allergy">lactose</span></li>
+
+                        </tr>
+                    </ul>
+                </div>
+                <div class="pic d">
+                    <h5>Meatstick Burger</h5>
+                    <img src="img/MeatstickBurger.jpg" alt="The Meatstick" width="100%" title="The Meatstick"/>
+                    <ul>
+                        <tr>
+                            <li>1200 kcal</li>
+                            <li>Contains <span class="allergy">gluten</span></li>
+                            <li>Contains <span class="allergy">lactose</span></li>
+
+                        </tr>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="customer_infromation">
@@ -110,10 +120,8 @@
                     <input type="radio" id="gender" name="gn" value="other" checked="checked">Other <br>
                 </p>
                 <button type="submit"><img src="img/order.png" alt="your order" width="15" title="your order"/> Place my order!</button>
-
             </form>
         </section>
-        
     </main>
 
     <hr>
