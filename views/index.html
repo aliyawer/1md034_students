@@ -2,9 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Your comment goes here -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <!--comment //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--comment-->
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script src="js/js_script.js" defer></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <script src="js/vue_script.js" defer></script>
     <title>Bastard Burgers</title>
     <meta charset="utf-8"/>
 </head>
@@ -19,66 +24,47 @@
             </div>
         </header>
 
+        <!--NEW SECTION //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
         <section class="menu">
             <h2>Select burger</h2>
             <p>This is where you execute burger selection</p>
 
-            <div class="wrapper">
-                <div class="pic a">
-                    <h5>Bang Burger</h5>
-                    <img src="img/BangBurger.jpg" alt="Bang burger" width="100%" title="The Bang Bang Burger"/>
+            <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            <!--
+            <h3>Coded in Vue</h3>
+            <div id="Vue" class="wrapper">
+                <div v-for="burger in burgers">
+                    <h5>{{ burger.name }}</h5>
+                    <img :src="burger.img" class="menu_images"></img>
                     <ul>
                         <tr>
-                            <li>800 kcal</li>
-                            <li>Contains <span class="allergy">gluten</span></li>
-                            <li>Contains <span class="allergy">lactose</span></li>
-
-                        </tr>
-                    </ul>
-                </div>
-                <div class="pic b">
-                    <h5>Cheese Burger</h5>
-                    <img src="img/CheeseBurger.jpg" alt="Classic Cheeseburger" width="100%" title="Classic Cheeseburger"/>
-                    <ul>
-                        <tr>
-                            <li>900 kcal</li>
-                            <li>Contains <span class="allergy">gluten</span></li>
-                            <li>Contains <span class="allergy">lactose</span></li>
-
-                        </tr>
-                    </ul>
-                </div>
-                <div class="pic c">
-                    <h5>Onion Burger</h5>
-                    <img src="img/OnionBurger.jpg" alt="Onion burger" width="100%" title="The Onion burger with cheese"/>
-                    <ul>
-                        <tr>
-                            <li>1000 kcal</li>
-                            <li>Contains <span class="allergy">gluten</span></li>
-                            <li>Contains <span class="allergy">lactose</span></li>
-
-                        </tr>
-                    </ul>
-                </div>
-                <div class="pic d">
-                    <h5>Meatstick Burger</h5>
-                    <img src="img/MeatstickBurger.jpg" alt="The Meatstick" width="100%" title="The Meatstick"/>
-                    <ul>
-                        <tr>
-                            <li>1200 kcal</li>
-                            <li>Contains <span class="allergy">gluten</span></li>
-                            <li>Contains <span class="allergy">lactose</span></li>
-
+                            <li>{{ burger.kcal }} kcal</li>
+                            <li v-if= "burger.gluten == true"> contains <span class="allergy">gluten</span></li>
+                            <li v-if= "burger.lactose == true"> contains <span class="allergy">lactose</span> </li>
                         </tr>
                     </ul>
                 </div>
             </div>
+            -->
+            <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+            <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+            <h3>Coded in javascript</h3>
+            <div id="JS" class="wrapper">
+            </div>
+
+            <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+
         </section>
 
+    <!--NEW SECTION //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <section id="customer_infromation">
             <h3>Customer information</h3>
             <p>This is where you provide necessery information</p>
         </section>
+    <!--NEW SECTION //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
         <section id="contact">
             <h3>Delivery information</h3>
@@ -119,11 +105,24 @@
                     <input type="radio" id="gender" name="gn" value="female">Female <br>
                     <input type="radio" id="gender" name="gn" value="other" checked="checked">Other <br>
                 </p>
-                <button type="submit"><img src="img/order.png" alt="your order" width="15" title="your order"/> Place my order!</button>
             </form>
+            <button id="placeOrderButton" type="submit"><img src="img/order.png" alt="your order" width="15" title="your order"/> Place my order!</button>
         </section>
-    </main>
 
+
+        <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section id="orderInformation">
+
+        </section>
+        <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+    </main>
+<!--comment //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <hr>
     <footer class="foot">
         <p>Copyright &copy; Aliyawer Qambari 2019 </p>
