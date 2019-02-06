@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--comment //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <!--comment-->
+
+    <!--common part //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--common part //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--common part //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/menu.js"></script>
@@ -14,9 +16,13 @@
     <meta charset="utf-8"/>
 </head>
 
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 <body>
     <main>
-
         <header class="head">
             <img  src="img/background.jpg" alt="background pic">
             <div class="welcome_massage">
@@ -24,68 +30,36 @@
             </div>
         </header>
 
-        <!--NEW SECTION //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
         <section class="menu">
             <h2>Select burger</h2>
             <p>This is where you execute burger selection</p>
 
-            <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-            <!--
-            <h3>Coded in Vue</h3>
-            <div id="Vue" class="wrapper">
-                <div v-for="burger in burgers">
-                    <h5>{{ burger.name }}</h5>
-                    <img :src="burger.img" class="menu_images"></img>
-                    <ul>
-                        <tr>
-                            <li>{{ burger.kcal }} kcal</li>
-                            <li v-if= "burger.gluten == true"> contains <span class="allergy">gluten</span></li>
-                            <li v-if= "burger.lactose == true"> contains <span class="allergy">lactose</span> </li>
-                        </tr>
-                    </ul>
-                </div>
-            </div>
-            -->
-            <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-            <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-            <h3>Coded in javascript</h3>
             <div id="JS" class="wrapper">
             </div>
 
-            <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
-
         </section>
 
-    <!--NEW SECTION //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <section id="customer_infromation">
             <h3>Customer information</h3>
             <p>This is where you provide necessery information</p>
         </section>
-    <!--NEW SECTION //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
         <section id="contact">
             <h3>Delivery information</h3>
             <form>
                 <p>
-                    <!-- fn = full name -->
                     <label for="name">Full name</label><br>
                     <input type="text" id="name" name="fn" required="required" placeholder="First- and Last name" maxlength="32">
                 </p>
                 <p>
-                    <!-- em = email -->
                     <label for="email">E-mail</label><br>
                     <input type="email" id="email" name="em" required="required" placeholder="E-mail address" maxlength="32">
                 </p>
                 <p>
-                    <!-- st = street number -->
                     <label for="street">Street</label><br>
                     <input type="text" id="street" name="st" required="required" placeholder="Street name" maxlength="32">
                 </p>
                 <p>
-                    <!-- hn = house number -->
                     <label for="house">House</label><br>
                     <input type="number" id="house" name="hn" required="required" placeholder="House number">
                 </p>
@@ -99,7 +73,6 @@
                     </select>
                 </p>
                 <p>
-                    <!--gn = gender-->
                     <label for="gender">Gender</label><br>
                     <input type="radio" id="gender" name="gn" value="male">Male <br>
                     <input type="radio" id="gender" name="gn" value="female">Female <br>
@@ -109,24 +82,129 @@
             <button id="placeOrderButton" type="submit"><img src="img/order.png" alt="your order" width="15" title="your order"/> Place my order!</button>
         </section>
 
-
-        <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
         <section id="orderInformation">
-
         </section>
-        <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-
-
-
-
 
     </main>
-<!--comment //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <hr>
+    <footer class="foot">
+        <p>Copyright &copy; Aliyawer Qambari 2019 </p>
+    </footer>
+</body>
+
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--    COMMENT OUT THE JAVASCRIPT PART FIRST; THEN TRY TO RUN THIS PART!!!!!!!!!!!!!!!!
+<body>
+    <main>
+        <header class="head">
+            <img  src="img/background.jpg" alt="background pic">
+            <div class="welcome_massage">
+                <h1>Welcome to Bastard Burgers</h1>
+            </div>
+        </header>
+
+        <section class="menu">
+            <h2>Select burger</h2>
+            <p>This is where you execute burger selection</p>
+
+            <div id="Vue" class="wrapper" >
+                <div v-for="burger in burgers">
+
+                    <h5><input type="checkbox" name="ordered" v-bind:id="burger.name"> {{ burger.name }}</h5>
+                    <img :src="burger.img" class="menu_images"></img>
+                    <ul>
+                        <tr>
+                            <li>{{ burger.kcal }} kcal</li>
+                            <li v-if= "burger.gluten"> contains <span class="allergy">gluten</span></li>
+                            <li v-if= "burger.lactose"> contains <span class="allergy">lactose</span> </li>
+                        </tr>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="customer_infromation">
+            <h3>Customer information</h3>
+            <p>This is where you provide necessery information</p>
+        </section>
+
+        <section id="contact">
+            <h3>Delivery information</h3>
+            <form>
+                <p>
+                    <label for="name">Full name</label><br>
+                    <input type="text" id="name" name="fn" required="required" placeholder="First- and Last name" maxlength="32">
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address" maxlength="32">
+                </p>
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="st" required="required" placeholder="Street name" maxlength="32">
+                </p>
+                <p>
+                    <label for="house">House</label><br>
+                    <input type="number" id="house" name="hn" required="required" placeholder="House number">
+                </p>
+                <p>
+                    <label for="payment_options">Payment options</label><br>
+                    <select id="payment_options" name="po">
+                        <option>Mobile payment</option>
+                        <option selected="selected">Credit card</option>
+                        <option>Cash</option>
+                        <option>Check</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="gender" name="gn" value="male">Male <br>
+                    <input type="radio" id="gender" name="gn" value="female">Female <br>
+                    <input type="radio" id="gender" name="gn" value="other" checked="checked">Other <br>
+                </p>
+            </form>
+        </section>
+
+
+        <div id="theOrder">
+            <button v-on:click="changeTitle"><img src="img/order.png" alt="your order" width="15" title="your order"/> Place my order</button>
+            <hr>
+            <h4>{{title}} </h4>
+
+            <div v-if="visible">
+                <p>Hi {{name}} !</p>
+                <p>your email: {{email}}</p>
+                <p>your address: {{address}}</p>
+                <p>your payment method: {{payment}}</p>
+                <p>your gender: {{gender}}</p>
+                <h4>your order is: </h4>
+
+                <div v-for="burger in burgers">
+                    <li v-if="burger.checked">{{burger.id}}</li>
+                </div>
+            </div>
+        </div>
+
     <hr>
     <footer class="foot">
         <p>Copyright &copy; Aliyawer Qambari 2019 </p>
     </footer>
 
+</main>
 </body>
+-->
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 </html>

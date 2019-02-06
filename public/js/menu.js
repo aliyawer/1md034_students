@@ -1,6 +1,13 @@
 
 var food = [
     {
+        "name": "Wood Burger",
+        "kcal": 1100  ,
+        "lactose": true ,
+        "gluten": true ,
+        "img" : "img/WoodBurger.jpg"
+    },
+    {
         "name": "Bang Burger",
         "kcal": 800  ,
         "lactose": false ,

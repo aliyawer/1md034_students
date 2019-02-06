@@ -1,4 +1,23 @@
+function MenuItem (burger, kcal, gluten, lactose){
+    this.burger = burger;
+    this.kcal = kcal;
+    this.gluten = gluten;
+    this.lactose = lactose;
+    this.name = function () {
+        return this.burger + " contains " + this.kcal + " kcal ";
+    }
+}
 
+var burgerA = new MenuItem ("Wood Burger", 1200, true, true);
+var burgerB = new MenuItem ("Bang Burger", 800, false, true);
+var burgerC = new MenuItem ("Cheese Burger", 900, true, true);
+var burgerD = new MenuItem ("Onion Burger", 1000, true, true);
+var burgerE = new MenuItem ("Meatstick Burger", 1200, true, true);
+
+var burgerList = [burgerA.name(),burgerB.name(),burgerC.name(),burgerD.name(),burgerE.name()];
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
 var myElement = document.getElementById("JS");
 
@@ -52,7 +71,8 @@ for (burger in food)
 
 var customerSection = document.getElementById("orderInformation");
 
-function CustomerData ()
+/// This function gives you all data a you get from customers
+function customerData ()
 {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -74,11 +94,12 @@ function CustomerData ()
 /// Gives all burgers with checkbox
 var orderedBurgers = document.getElementsByName("ordered");
 
+
 ////////////////////////////////////////////////////////////////////////////////
 /// PRINTING OUT ORDERS
 
 function printOrder() {
-    var data = CustomerData ();
+    var data = customerData ();
     var div = document.createElement("div");
 
     /// prevent to print out customer infromation many times
@@ -87,7 +108,7 @@ function printOrder() {
 
         /// checks if you forgot give your contacts information
         if(data.find(el => el === '') === ''){
-            var empty = document.createTextNode("OBS: you have to give your infromation above! ");
+            var empty = document.createTextNode("OBS: you have to give your contact infromation above! ");
             div.appendChild(empty);
             customerSection.appendChild(div);
 
@@ -130,7 +151,6 @@ function printOrder() {
                     var yourOrder = document.createTextNode(orderedBurgers[order].id);
                     var listitem = document.createElement("li");
                     listitem.appendChild(yourOrder);
-                    div.appendChild(newLine);
                     div.appendChild(listitem);
                 }
             }
