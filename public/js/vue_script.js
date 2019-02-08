@@ -16,11 +16,13 @@ new Vue ({
         address: '',
         payment: '',
         gender: '',
-        burgers: document.getElementsByName("ordered"),
+        burgers: food.map(el => Object.assign({}, el)),
     },
+    
     methods: {
         changeTitle: function (){
             var data = customerData();
+            this.burgers = food.map(el => Object.assign({}, el))
 
             if(data.find(el => el === '') === ''){
                 this.title = 'you have to give your contact information above! ';

@@ -16,10 +16,14 @@
     <meta charset="utf-8"/>
 </head>
 
+
+
+
 <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--
 
 <body>
     <main>
@@ -92,6 +96,7 @@
     </footer>
 </body>
 
+-->
 <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--JAVASCRIPT PART ////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -102,7 +107,7 @@
 <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<!--    COMMENT OUT THE JAVASCRIPT PART FIRST; THEN TRY TO RUN THIS PART!!!!!!!!!!!!!!!!
+<!--    COMMENT OUT THE JAVASCRIPT PART FIRST; THEN TRY TO RUN THIS PART!!!!!!!!!!!!!!!! -->
 <body>
     <main>
         <header class="head">
@@ -119,7 +124,7 @@
             <div id="Vue" class="wrapper" >
                 <div v-for="burger in burgers">
 
-                    <h5><input type="checkbox" name="ordered" v-bind:id="burger.name"> {{ burger.name }}</h5>
+                    <h5><input type="checkbox" name="ordered" v-bind:id="burger.name" v-model="burger.checked"> {{ burger.name }}</h5>
                     <img :src="burger.img" class="menu_images"></img>
                     <ul>
                         <tr>
@@ -174,23 +179,23 @@
             </form>
         </section>
 
-
         <div id="theOrder">
             <button v-on:click="changeTitle"><img src="img/order.png" alt="your order" width="15" title="your order"/> Place my order</button>
             <hr>
-            <h4>{{title}} </h4>
+            <h5>{{title}} </h5>
 
             <div v-if="visible">
-                <p>Hi {{name}} !</p>
-                <p>your email: {{email}}</p>
-                <p>your address: {{address}}</p>
-                <p>your payment method: {{payment}}</p>
-                <p>your gender: {{gender}}</p>
-                <h4>your order is: </h4>
+                Hi {{name}} ! <br>
+                your email: {{email}} <br>
+                your address: {{address}} <br>
+                your payment method: {{payment}} <br>
+                your gender: {{gender}} <br>
+                <h5>your order is: </h5>
 
                 <div v-for="burger in burgers">
-                    <li v-if="burger.checked">{{burger.id}}</li>
+                    <li v-if="burger.checked">{{burger.name}}</li>
                 </div>
+                
             </div>
         </div>
 
@@ -201,7 +206,7 @@
 
 </main>
 </body>
--->
+
 <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--VUE PART ////////////////////////////////////////////////////////////////////////////////////////////////////////-->

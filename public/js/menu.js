@@ -5,7 +5,7 @@ var food = [
         "kcal": 1100  ,
         "lactose": true ,
         "gluten": true ,
-        "img" : "img/WoodBurger.jpg"
+        "img" : "img/WoodBurger.jpg",
     },
     {
         "name": "Bang Burger",

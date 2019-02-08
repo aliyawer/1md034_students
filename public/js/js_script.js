@@ -67,6 +67,10 @@ for (burger in food)
     myElement.appendChild(div);
 }
 
+console.log(food);
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 
 var customerSection = document.getElementById("orderInformation");
