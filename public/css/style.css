@@ -55,12 +55,19 @@ header{
     text-transform: capitalize;
     padding-bottom: 5px;
     border: 2px Dashed black;
+    margin-left: 5px;
     width: 97vw
 }
 
 #customer_infromation{
     border: 2px Dashed black;
+    margin-left: 5px;
     width: 97vw
+}
+
+#theOrder{
+    margin-left: 3%;
+    width: 100%;
 }
 
 .allergy{

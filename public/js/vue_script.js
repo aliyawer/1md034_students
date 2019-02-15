@@ -18,7 +18,7 @@ new Vue ({
         gender: '',
         burgers: food.map(el => Object.assign({}, el)),
     },
-    
+
     methods: {
         changeTitle: function (){
             var data = customerData();
